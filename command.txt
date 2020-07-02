@@ -1,0 +1,46 @@
+
+Kcwang is a nice man
+
+git  init :把目录变成Git可以管理的仓库
+git  add  文件名：把文件添加到仓库
+git  commit -m "注释信息" ：把文件提交到仓库
+git log :该命令可以显示从最近到最远的提交日志.  q: 退出
+git log  --pretty=oneline:
+
+git reset --hard HEAD^/HEAD~100/HEAD具体版本号：该命令将版本回退到上一个版本/上100个版本/具体版本号
+git reflog: 该命令记录每一次命令
+
+git checkout  --  filename :该命令就是让这个filename文件回到最后一次git commit 或者 git add 的状态
+git clone 远程库地址：从远程库客隆
+git push :往远程库推文件
+
+git remote add origin 远程仓库地址：配置远程仓库，与远程仓库建立关联
+
+git remote rm origin:删除关联
+
+
+git pull origin master :拉取远程库内容到本地库那么可以，来自动抓取后合并该远程分支到当前分支。
+
+$ git remote -v：查看本地添加了哪些远程地址
+
+
+git remote remove origin  地址：删除本地指定的远程地址
+
+git branch :列出所有本地分支
+git branch -r：列出所有远程分支
+
+git push -u origin master: 往远程仓库推文件
+
+:q!  :退出vim编辑模式
+
+git branch :创建分支
+
+git checkout : 切换分支
+
+git checkout -b :创建与切换同时
+
+
+# 切换分支先pull后，再工作
+
+git merge 被合并的分支名：将别的分支合并到当前分支
+
